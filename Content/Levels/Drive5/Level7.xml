@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LevelData>
+  
+    <LevelName>Random Scan</LevelName>
+    <Dimension><X>1500</X> <Y>1000</Y></Dimension>
+    <StartPosition><X>800</X> <Y>500</Y></StartPosition>
+    <TimeEndLevel>-1</TimeEndLevel>
+    <NumberOfDocumentFiles>-1</NumberOfDocumentFiles>
+    <TopPlayerBodyIndex>0</TopPlayerBodyIndex>
+    <BottomPlayerBodyIndex>2</BottomPlayerBodyIndex>
+    <TopPlayerWeaponIndex>15</TopPlayerWeaponIndex>
+    <BottomPlayerWeaponIndex>9</BottomPlayerWeaponIndex>
+    <BossName>None</BossName>
+	<!-- Generator 1 -->
+	<Generator>
+      <NumberOfTimes>5</NumberOfTimes>
+      <ObjectType>trojan</ObjectType>
+      <NumberOfObjects>15</NumberOfObjects>
+      <StartTime>10</StartTime>
+      <RandomStartTime>0</RandomStartTime>
+      <InterGenerationTime>5</InterGenerationTime>
+      <RandomInterGenerationTime>1</RandomInterGenerationTime>
+    </Generator>
+	<!-- Generator 2 -->
+	<Generator>
+      <NumberOfTimes>8</NumberOfTimes>
+      <ObjectType>dos</ObjectType>
+      <NumberOfObjects>15</NumberOfObjects>
+      <StartTime>10</StartTime>
+      <RandomStartTime>0</RandomStartTime>
+      <InterGenerationTime>5</InterGenerationTime>
+      <RandomInterGenerationTime>1</RandomInterGenerationTime>
+    </Generator>
+	<!-- Generator 2 -->
+	<Generator>
+      <NumberOfTimes>4</NumberOfTimes>
+      <ObjectType>roamer</ObjectType>
+      <NumberOfObjects>5</NumberOfObjects>
+      <StartTime>20</StartTime>
+      <RandomStartTime>0</RandomStartTime>
+      <InterGenerationTime>5</InterGenerationTime>
+      <RandomInterGenerationTime>1</RandomInterGenerationTime>
+    </Generator>
+	<!-- Generator 3 -->
+	<Generator>
+      <NumberOfTimes>3</NumberOfTimes>
+      <ObjectType>exe file</ObjectType>
+      <NumberOfObjects>3</NumberOfObjects>
+      <StartTime>5</StartTime>
+      <RandomStartTime>0</RandomStartTime>
+      <InterGenerationTime>5</InterGenerationTime>
+      <RandomInterGenerationTime>1</RandomInterGenerationTime>
+    </Generator>
+  
+</LevelData>

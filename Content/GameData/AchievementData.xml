@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<GameAchievements xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!-- TODO: replace this Asset with your own XML asset data. -->
+    <Achievement>
+      <Name>Virus Detector</Name>
+      <Description>Clean 32 Virusous</Description>
+      <ObjectType>Viruseous</ObjectType>
+      <GoalNumber>32</GoalNumber>
+    </Achievement>
+    <Achievement>
+      <Name>DoS Smasher</Name>
+      <Description>Clean 2048 DoS</Description>
+      <ObjectType>DoS</ObjectType>
+      <GoalNumber>2048</GoalNumber>
+    </Achievement>
+    <Achievement>
+      <Name>Hacker</Name>
+      <Description>Clean 512 Hackintosh</Description>
+      <ObjectType>Hackintosh</ObjectType>
+      <GoalNumber>512</GoalNumber>
+    </Achievement>
+    <Achievement>
+      <Name>Malware</Name>
+      <Description>Clean 1024 Malzone</Description>
+      <ObjectType>Malzone</ObjectType>
+      <GoalNumber>1024</GoalNumber>
+    </Achievement>
+    <Achievement>
+      <Name>Pop Up Blocker</Name>
+      <Description>Clean 4096 Popur</Description>
+      <ObjectType>Popur</ObjectType>
+      <GoalNumber>4096</GoalNumber>
+    </Achievement>
+    <Achievement>
+      <Name>Trojan Cleaner</Name>
+      <Description>Clean 128 Trojan</Description>
+      <ObjectType>Trojan</ObjectType>
+      <GoalNumber>128</GoalNumber>
+    </Achievement>
+    <Achievement>
+      <Name>Worm Supressor</Name>
+      <Description>Clean 2048 Worm</Description>
+      <ObjectType>Worm</ObjectType>
+      <GoalNumber>2048</GoalNumber>
+    </Achievement>
+    <Achievement>
+      <Name>DosX Crusher</Name>
+      <Description>Clean 2048 DoSX</Description>
+      <ObjectType>DoSX</ObjectType>
+      <GoalNumber>2048</GoalNumber>
+    </Achievement>
+    <Achievement>
+      <Name>Port Guard</Name>
+      <Description>Clean 4096 Hakintroy</Description>
+      <ObjectType>Hakintroy</ObjectType>
+      <GoalNumber>4096</GoalNumber>
+    </Achievement>
+    <Achievement>
+      <Name>Captain</Name>
+      <Description>Clean 512 Malbomb</Description>
+      <ObjectType>Malbomb</ObjectType>
+      <GoalNumber>512</GoalNumber>
+    </Achievement>
+    <Achievement>
+      <Name>Tresspassing</Name>
+      <Description>Clean 1024 Roamer</Description>
+      <ObjectType>Roamer</ObjectType>
+      <GoalNumber>1024</GoalNumber>
+    </Achievement>
+    <Achievement>
+      <Name>Anti-Spy</Name>
+      <Description>Clean 1024 Camouflager</Description>
+      <ObjectType>Camouflager</ObjectType>
+      <GoalNumber>1024</GoalNumber>
+    </Achievement>
+    <Achievement>
+      <Name>Hanged</Name>
+      <Description>Clean 2048 Hanger</Description>
+      <ObjectType>Hanger</ObjectType>
+      <GoalNumber>2048</GoalNumber>
+    </Achievement>
+    <Achievement>
+      <Name>Blocker</Name>
+      <Description>Clean 256 Auto Pop-up</Description>
+      <ObjectType>Auto Pop-up</ObjectType>
+      <GoalNumber>256</GoalNumber>
+    </Achievement>
+    <Achievement>
+      <Name>File Saver</Name>
+      <Description>Save 32 File</Description>
+      <ObjectType>exe file</ObjectType>
+      <GoalNumber>32</GoalNumber>
+    </Achievement>
+    <Achievement>
+      <Name>Protector</Name>
+      <Description>Protect 16 File</Description>
+      <ObjectType>zip file</ObjectType>
+      <GoalNumber>16</GoalNumber>
+    </Achievement>
+    <Achievement>
+      <Name>Collector</Name>
+      <Description>Collect 256 document File</Description>
+      <ObjectType>document file</ObjectType>
+      <GoalNumber>256</GoalNumber>
+    </Achievement>
+    <Achievement>
+      <Name>Healer</Name>
+      <Description>Use 512 Health Item</Description>
+      <ObjectType>health</ObjectType>
+      <GoalNumber>512</GoalNumber>
+    </Achievement>
+    <Achievement>
+      <Name>Defencive</Name>
+      <Description>Use 512 Shield Item</Description>
+      <ObjectType>shield</ObjectType>
+      <GoalNumber>512</GoalNumber>
+    </Achievement>
+    <Achievement>
+      <Name>Quarantine</Name>
+      <Description>Use 256 Quarantine Item</Description>
+      <ObjectType>quarantine</ObjectType>
+      <GoalNumber>256</GoalNumber>
+    </Achievement>
+    <Achievement>
+      <Name>Bomber</Name>
+      <Description>Use 64 Explosive Item</Description>
+      <ObjectType>explosion</ObjectType>
+      <GoalNumber>64</GoalNumber>
+    </Achievement>
+    <Achievement>
+      <Name>Time Manager</Name>
+      <Description>Use 128 Slow Motion Item</Description>
+      <ObjectType>mosiac</ObjectType>
+      <GoalNumber>128</GoalNumber>
+    </Achievement>
+</GameAchievements>

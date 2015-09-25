@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DataLoader xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <!-- TODO: place all the characters after each other. -->
+    <Character>
+	  <!-- original name:Smith :) -->
+      <Name>Nuture</Name>
+      <Description>Moderate speed and strength defender</Description>
+      <Overclocking>Circular Fire Wall</Overclocking>
+      <!-- this field is true for all except the characters that the character starts with -->
+      <Locked>false</Locked>
+      <UnlockPoints>0</UnlockPoints>
+    </Character>
+	<Character>
+	  <!-- original name:Jessica :) -->
+      <Name>Eva</Name>
+      <Description>Extremely fast defender</Description>
+      <Overclocking>Quarantine Power</Overclocking>
+      <!-- this field is true for all except the characters that the character starts with -->
+      <Locked>true</Locked>
+      <UnlockPoints>10000</UnlockPoints>
+    </Character>
+	<Character>
+	  <!-- original name:Jack :) -->
+      <Name>McGuffin</Name>
+      <Description>A well balanced powerhouse</Description>
+      <Overclocking>Power Shock</Overclocking>
+      <!-- this field is true for all except the characters that the character starts with -->
+      <Locked>true</Locked>
+      <UnlockPoints>10000</UnlockPoints>
+    </Character>
+	<Character>
+	  <!-- original name:Omar :) -->
+      <Name>Bullseye</Name>
+      <Description>A smart guard</Description>
+      <Overclocking>Health Regenerate</Overclocking>
+      <!-- this field is true for all except the characters that the character starts with -->
+      <Locked>true</Locked>
+      <UnlockPoints>30000</UnlockPoints>
+    </Character>
+    <Character>
+      <!-- original name:3ebs :) -->
+      <Name>Casper</Name>
+      <Description>As fast as it gets...As tough as it gets</Description>
+      <Overclocking>Cool Processing Power</Overclocking>
+      <!-- this field is true for all except the characters that the character starts with -->
+      <Locked>true</Locked>
+      <UnlockPoints>40000</UnlockPoints>
+    </Character>
+	<Character>
+	  <!-- original name:Diesel :) -->
+      <Name>Bear</Name>
+      <Description>Tough, heavy and extremely dangerous</Description>
+      <Overclocking>Spread Wave</Overclocking>
+      <!-- this field is true for all except the characters that the character starts with -->
+      <Locked>true</Locked>
+      <UnlockPoints>50000</UnlockPoints>
+    </Character>
+<!-- TODO: place all the weapons after each other. -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <!-- original name: Uzi-->
+    <Weapon>
+      <Name>MHz</Name>
+      <Description>It's party time...too fast...with a high firing rate</Description>
+      <!-- this field is true for all except the characters that the weapons starts with -->
+      <Locked>false</Locked>
+      <UnlockPoints>0</UnlockPoints>
+      <ClearedLevels>0</ClearedLevels>
+    </Weapon>
+    <!-- original name: Rifle -->
+    <Weapon>
+      <Name>Alpha-Gun</Name>
+      <Description>Slow but extremely dangerous</Description>
+      <!-- this field is true for all except the characters that the weapons starts with -->
+      <Locked>true</Locked>
+      <UnlockPoints>1000</UnlockPoints>
+      <ClearedLevels>0</ClearedLevels>
+    </Weapon>
+    <!-- original name: Flamer -->
+    <Weapon>
+      <Name>Fire-Waller</Name>
+      <Description>Sets intuders on fire</Description>
+      <!-- this field is true for all except the characters that the weapons starts with -->
+      <Locked>true</Locked>
+      <UnlockPoints>5000</UnlockPoints>
+      <ClearedLevels>0</ClearedLevels>
+    </Weapon>
+    <!-- original name: Freezer -->
+    <Weapon>
+      <Name>Quarantiner</Name>
+      <Description>The power to quarantine intruders</Description>
+      <!-- this field is true for all except the characters that the weapons starts with -->
+      <Locked>true</Locked>
+      <UnlockPoints>5000</UnlockPoints>
+      <ClearedLevels>0</ClearedLevels>
+    </Weapon>
+    <!-- original name: Tommygun -->
+    <Weapon>
+      <Name>Machine Gun</Name>
+      <Description>Let them taste some lead</Description>
+      <!-- this field is true for all except the characters that the weapons starts with -->
+      <Locked>true</Locked>
+      <UnlockPoints>15000</UnlockPoints>
+      <ClearedLevels>0</ClearedLevels>
+    </Weapon>
+    <!-- original name: Grenade launcher -->
+    <Weapon>
+      <Name>Bomber</Name>
+      <Description>Grenades can be helpful in difficult situations</Description>
+      <!-- this field is true for all except the characters that the weapons starts with -->
+      <Locked>true</Locked>
+      <UnlockPoints>35000</UnlockPoints>
+      <ClearedLevels>25</ClearedLevels>
+    </Weapon>
+	<!-- original name: Shotgun -->
+    <Weapon>
+      <Name>Terminator</Name>
+      <Description>It's just like a shotgun...but better</Description>
+      <!-- this field is true for all except the characters that the weapons starts with -->
+      <Locked>true</Locked>
+      <UnlockPoints>35000</UnlockPoints>
+      <ClearedLevels>25</ClearedLevels>
+    </Weapon>
+	<!-- original name: Mini-gun-->
+    <Weapon>
+      <Name>Heavy Gun</Name>
+      <Description>It's raining bullets down here</Description>
+      <!-- this field is true for all except the characters that the weapons starts with -->
+      <Locked>true</Locked>
+      <UnlockPoints>40000</UnlockPoints>
+      <ClearedLevels>40</ClearedLevels>
+    </Weapon>
+	<!-- original name: Rocket launcher -->
+    <Weapon>
+      <Name>Bazooka</Name>
+      <Description>It's time for mass destruction</Description>
+      <!-- this field is true for all except the characters that the weapons starts with -->
+      <Locked>true</Locked>
+      <UnlockPoints>60000</UnlockPoints>
+      <ClearedLevels>40</ClearedLevels>
+    </Weapon>
+    <!-- original name: Mine -->
+    <Weapon>
+      <Name>Trapper</Name>
+      <Description>A threats Mine</Description>
+      <!-- this field is true for all except the characters that the weapons starts with -->
+      <Locked>true</Locked>
+      <UnlockPoints>60000</UnlockPoints>
+      <ClearedLevels>40</ClearedLevels>
+    </Weapon>
+    <!-- original name: Scatter Bomb -->
+    <Weapon>
+      <Name>Z-Bomb</Name>
+      <Description>A forbidden bomb</Description>
+      <!-- this field is true for all except the characters that the weapons starts with -->
+      <Locked>true</Locked>
+      <UnlockPoints>60000</UnlockPoints>
+      <ClearedLevels>40</ClearedLevels>
+    </Weapon>
+    <!-- original name: Spiker -->
+    <Weapon>
+      <Name>Spiker</Name>
+      <Description>Create road blocks...threats are not allowed to pass</Description>
+      <!-- this field is true for all except the characters that the weapons starts with -->
+      <Locked>true</Locked>
+      <UnlockPoints>60000</UnlockPoints>
+      <ClearedLevels>40</ClearedLevels>
+    </Weapon>
+    <!-- original name: RifleXp -->
+    <Weapon>
+      <Name>Beta-Gun</Name>
+      <Description>A penetrating slow weapon</Description>
+      <!-- this field is true for all except the characters that the weapons starts with -->
+      <Locked>true</Locked>
+      <UnlockPoints>80000</UnlockPoints>
+      <ClearedLevels>50</ClearedLevels>
+    </Weapon>
+    <!-- original name: Homing Missle -->
+    <Weapon>
+      <Name>Tracker</Name>
+      <Description>Threat homing missile</Description>
+      <!-- this field is true for all except the characters that the weapons starts with -->
+      <Locked>true</Locked>
+      <UnlockPoints>100000</UnlockPoints>
+      <ClearedLevels>50</ClearedLevels>
+    </Weapon>
+	<!-- original name: Hellgun -->
+    <Weapon>
+      <Name>Hexa-Gun</Name>
+      <Description>It's time to clean up the mess using the strongest weapon ever</Description>
+      <!-- this field is true for all except the characters that the weapons starts with -->
+      <Locked>true</Locked>
+      <UnlockPoints>500000</UnlockPoints>
+      <ClearedLevels>70</ClearedLevels>
+    </Weapon>
+    <!-- original name: Xena -->
+    <Weapon>
+      <Name>Cyber</Name>
+      <Description>Threats bouncing disc</Description>
+      <!-- this field is true for all except the characters that the weapons starts with -->
+      <Locked>true</Locked>
+      <UnlockPoints>500000</UnlockPoints>
+      <ClearedLevels>70</ClearedLevels>
+    </Weapon>
+    <!-- original name: Hell Launcher -->
+    <Weapon>
+      <Name>Tri-launcher</Name>
+      <Description>Three in one tracking rockets launcher</Description>
+      <!-- this field is true for all except the characters that the weapons starts with -->
+      <Locked>true</Locked>
+      <UnlockPoints>1000000</UnlockPoints>
+      <ClearedLevels>80</ClearedLevels>
+    </Weapon>
+    <!-- original name: Mother Bomb -->
+    <Weapon>
+      <Name>Mother Bomb</Name>
+      <Description>This is how the system shall be cleaned...with the mother of all bombs</Description>
+      <!-- this field is true for all except the characters that the weapons starts with -->
+      <Locked>true</Locked>
+      <UnlockPoints>1000000</UnlockPoints>
+      <ClearedLevels>80</ClearedLevels>
+    </Weapon>
+<!-- TODO: place all the enemies after each other. -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+	<!-- original name: Virouses -->
+    <Enemy>
+      <Name>Viruseous</Name>
+      <Description>A very dangerous VIRUS that will seek and destroy. Finish them off before they infect files</Description>
+    </Enemy>
+    <!-- original name: Exe File -->
+    <Enemy>
+      <Name>Exe File</Name>
+      <Description>Clean these files when they are INFECTED before changing to PERMENANT threats</Description>
+    </Enemy>
+	<!-- original name: Troy -->
+    <Enemy>
+      <Name>Trojan</Name>
+      <Description>Trojans may seem harmless, but they are sneaky and extremely dangerous. They will wait for the right time to attack</Description>
+    </Enemy>
+	<!-- original name: Malzone -->
+    <Enemy>
+      <Name>Malzone</Name>
+      <Description>Better not mess with this MALWARE as it steals space and is very dangerous</Description>
+    </Enemy>
+	<!-- original name: Hackintosh -->
+    <Enemy>
+      <Name>Hackintosh</Name>
+      <Description>A HACK window that results in undesirable system breach</Description>
+    </Enemy>
+	<!-- original name: Popur -->
+    <Enemy>
+      <Name>Popur</Name>
+      <Description>Don't come near this, or it shall POP UP and explode in your face</Description>
+    </Enemy>
+    <!-- original name: Zip File -->
+    <Enemy>
+      <Name>Zip File</Name>
+      <Description>PROTECT these files from de-cryption</Description>
+    </Enemy>
+	<!-- original name: Dos -->
+    <Enemy>
+      <Name>DoS</Name>
+      <Description>You should stay away from the DENIAL OF SERVICE attack because it affects your resources, takes space and leads to INVERTED functionality</Description>
+    </Enemy>
+	<!-- original name: Wormage -->
+    <Enemy>
+      <Name>Worm</Name>
+      <Description>Better clean this worm early or be prepared for an army of duplicating worms. They are very dangerous and replicates with time</Description>
+    </Enemy>
+    <!-- original name: Document File -->
+    <Enemy>
+      <Name>Document File</Name>
+      <Description>Find and RETRIEVE these important documents to successfully complete the SCAN</Description>
+    </Enemy>
+    <!-- original name: Popur2 -->
+    <Enemy>
+      <Name>Auto Pop-up</Name>
+      <Description>This threats pops in your face automatically after a while</Description>
+    </Enemy>
+    <!-- original name: Troy2 -->
+    <Enemy>
+      <Name>Camouflager</Name>
+      <Description>A sneaky Trojan that is sometimes INVISIBLE</Description>
+    </Enemy>
+    <!-- original name: Slower -->
+    <Enemy>
+      <Name>DoSX</Name>
+      <Description>A DENIAL OF SERVICE attack that SLOWS you down</Description>
+    </Enemy>
+    <!-- original name: Hackintosh2 -->
+    <Enemy>
+      <Name>Hakintroy</Name>
+      <Description>A trojan spreading HACK window</Description>
+    </Enemy>
+    <!-- original name: Dos2 -->
+    <Enemy>
+      <Name>Hanger</Name>
+      <Description>A DENIAL OF SERVICE attack that use all your PROCESSING capacity</Description>
+    </Enemy>
+    <!-- original name: Malzone2 -->
+    <Enemy>
+      <Name>Malbomb</Name>
+      <Description>A space using malware that explodes after a while</Description>
+    </Enemy>
+    <!-- original name: Bouncer -->
+    <Enemy>
+      <Name>Roamer</Name>
+      <Description>A dangerous MALWARE that keeps on roaming through the system</Description>
+    </Enemy>
+</DataLoader>

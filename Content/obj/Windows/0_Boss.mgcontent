@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SourceFile>D:/Work/CSharp/CleanEmUp_MonoGame/CleanEmUp_MonoGame/Content/0_Boss.mp3</SourceFile>
+  <SourceTime>2012-06-15T11:19:48.7826222+02:00</SourceTime>
+  <DestFile>D:/Work/CSharp/CleanEmUp_MonoGame/CleanEmUp_MonoGame/Content/bin/Windows/0_Boss.xnb</DestFile>
+  <DestTime>2015-05-13T00:23:41.6572656+02:00</DestTime>
+  <Importer>Mp3Importer</Importer>
+  <ImporterTime>2015-04-29T19:14:44+02:00</ImporterTime>
+  <Processor>SongProcessor</Processor>
+  <ProcessorTime>2015-04-29T19:14:44+02:00</ProcessorTime>
+  <Parameters>
+    <Key>Quality</Key>
+    <Value>Best</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput>
+    <string>D:/Work/CSharp/CleanEmUp_MonoGame/CleanEmUp_MonoGame/Content/bin/Windows/0_Boss.wma</string>
+  </BuildOutput>
+</PipelineBuildEvent>

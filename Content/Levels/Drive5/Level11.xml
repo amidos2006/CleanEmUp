@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LevelData>
+  
+    <LevelName>Triples</LevelName>
+    <Dimension><X>1500</X> <Y>1000</Y></Dimension>
+    <StartPosition><X>800</X> <Y>500</Y></StartPosition>
+    <TimeEndLevel>-1</TimeEndLevel>
+    <NumberOfDocumentFiles>-1</NumberOfDocumentFiles>
+    <TopPlayerBodyIndex>2</TopPlayerBodyIndex>
+    <BottomPlayerBodyIndex>5</BottomPlayerBodyIndex>
+    <TopPlayerWeaponIndex>16</TopPlayerWeaponIndex>
+    <BottomPlayerWeaponIndex>3</BottomPlayerWeaponIndex>
+    <BossName>None</BossName>
+		<!-- Generator 1 -->
+	<Generator><NumberOfTimes>5</NumberOfTimes>
+      <ObjectType>Viruseous</ObjectType>
+      <NumberOfObjects>20</NumberOfObjects>
+      <StartTime>5</StartTime>
+      <RandomStartTime>1</RandomStartTime>
+      <InterGenerationTime>5</InterGenerationTime>
+      <RandomInterGenerationTime>1</RandomInterGenerationTime>
+    </Generator>
+			<!-- Generator 1 -->
+	<Generator><NumberOfTimes>5</NumberOfTimes>
+      <ObjectType>roamer</ObjectType>
+      <NumberOfObjects>18</NumberOfObjects>
+      <StartTime>10</StartTime>
+      <RandomStartTime>1</RandomStartTime>
+      <InterGenerationTime>5</InterGenerationTime>
+      <RandomInterGenerationTime>1</RandomInterGenerationTime>
+    </Generator>
+	<!-- Generator 2 -->
+	<Generator><NumberOfTimes>3</NumberOfTimes>
+      <ObjectType>Camouflager</ObjectType>
+      <NumberOfObjects>20</NumberOfObjects>
+      <StartTime>5</StartTime>
+      <RandomStartTime>1</RandomStartTime>
+      <InterGenerationTime>5</InterGenerationTime>
+      <RandomInterGenerationTime>1</RandomInterGenerationTime>
+    </Generator>
+	<!-- Generator 3 -->
+	<Generator><NumberOfTimes>3</NumberOfTimes>
+      <ObjectType>popur</ObjectType>
+      <NumberOfObjects>20</NumberOfObjects>
+      <StartTime>8</StartTime>
+      <RandomStartTime>1</RandomStartTime>
+      <InterGenerationTime>5</InterGenerationTime>
+      <RandomInterGenerationTime>1</RandomInterGenerationTime>
+    </Generator>
+	<!-- Generator 4 -->
+	<Generator><NumberOfTimes>1</NumberOfTimes>
+      <ObjectType>dos</ObjectType>
+      <NumberOfObjects>10</NumberOfObjects>
+      <StartTime>5</StartTime>
+      <RandomStartTime>1</RandomStartTime>
+      <InterGenerationTime>10</InterGenerationTime>
+      <RandomInterGenerationTime>1</RandomInterGenerationTime>
+    </Generator>
+		<!-- Generator 4 -->
+	<Generator><NumberOfTimes>1</NumberOfTimes>
+      <ObjectType>dos</ObjectType>
+      <NumberOfObjects>10</NumberOfObjects>
+      <StartTime>5</StartTime>
+      <RandomStartTime>1</RandomStartTime>
+      <InterGenerationTime>10</InterGenerationTime>
+      <RandomInterGenerationTime>1</RandomInterGenerationTime>
+    </Generator>
+	<!-- Generator 5 -->
+	<Generator><NumberOfTimes>2</NumberOfTimes>
+      <ObjectType>malzone</ObjectType>
+      <NumberOfObjects>6</NumberOfObjects>
+      <StartTime>5</StartTime>
+      <RandomStartTime>0</RandomStartTime>
+      <InterGenerationTime>10</InterGenerationTime>
+      <RandomInterGenerationTime>1</RandomInterGenerationTime>
+    </Generator>
+		<!-- Generator 5 -->
+	<Generator><NumberOfTimes>2</NumberOfTimes>
+      <ObjectType>malzone</ObjectType>
+      <NumberOfObjects>6</NumberOfObjects>
+      <StartTime>5</StartTime>
+      <RandomStartTime>0</RandomStartTime>
+      <InterGenerationTime>10</InterGenerationTime>
+      <RandomInterGenerationTime>1</RandomInterGenerationTime>
+    </Generator>
+		<!-- Generator 5 -->
+	<Generator><NumberOfTimes>2</NumberOfTimes>
+      <ObjectType>Malbomb</ObjectType>
+      <NumberOfObjects>3</NumberOfObjects>
+      <StartTime>5</StartTime>
+      <RandomStartTime>0</RandomStartTime>
+      <InterGenerationTime>10</InterGenerationTime>
+      <RandomInterGenerationTime>1</RandomInterGenerationTime>
+    </Generator>
+	<!-- Generator 6 -->
+	<Generator><NumberOfTimes>2</NumberOfTimes>
+      <ObjectType>hackintosh</ObjectType>
+      <NumberOfObjects>1</NumberOfObjects>
+      <StartTime>5</StartTime>
+      <RandomStartTime>0</RandomStartTime>
+      <InterGenerationTime>5</InterGenerationTime>
+      <RandomInterGenerationTime>1</RandomInterGenerationTime>
+    </Generator>
+		<!-- Generator 9 -->
+	<Generator><NumberOfTimes>2</NumberOfTimes>
+      <ObjectType>hackintosh</ObjectType>
+      <NumberOfObjects>1</NumberOfObjects>
+      <StartTime>10</StartTime>
+      <RandomStartTime>0</RandomStartTime>
+      <InterGenerationTime>5</InterGenerationTime>
+      <RandomInterGenerationTime>1</RandomInterGenerationTime>
+    </Generator>
+		<!-- Generator 9 -->
+	<Generator><NumberOfTimes>1</NumberOfTimes>
+      <ObjectType>Hakintroy</ObjectType>
+      <NumberOfObjects>1</NumberOfObjects>
+      <StartTime>15</StartTime>
+      <RandomStartTime>0</RandomStartTime>
+      <InterGenerationTime>5</InterGenerationTime>
+      <RandomInterGenerationTime>1</RandomInterGenerationTime>
+    </Generator>
+  
+</LevelData>

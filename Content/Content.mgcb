@@ -1,0 +1,16 @@
+
+#----------------------------- Global Properties ----------------------------#
+
+/outputDir:bin/Windows
+/intermediateDir:obj/Windows
+/platform:Windows
+/config:
+/profile:Reach
+/compress:False
+
+#-------------------------------- References --------------------------------#
+
+/reference:../bin/Windows/Debug/CleanEmUp_MonoGame.exe
+
+#---------------------------------- Content ---------------------------------#
+

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LevelData>
+  
+    <LevelName>Hulk</LevelName>
+    <Dimension><X>1500</X> <Y>1000</Y></Dimension>
+    <StartPosition><X>800</X> <Y>500</Y></StartPosition>
+    <TimeEndLevel>-1</TimeEndLevel>
+    <NumberOfDocumentFiles>-1</NumberOfDocumentFiles>
+    <TopPlayerBodyIndex>2</TopPlayerBodyIndex>
+    <BottomPlayerBodyIndex>4</BottomPlayerBodyIndex>
+    <TopPlayerWeaponIndex>7</TopPlayerWeaponIndex>
+    <BottomPlayerWeaponIndex>8</BottomPlayerWeaponIndex>
+    <BossName>None</BossName>
+	<!-- Generator 1 -->
+	<Generator>
+      <NumberOfTimes>5</NumberOfTimes>
+      <ObjectType>trojan</ObjectType>
+      <NumberOfObjects>10</NumberOfObjects>
+      <StartTime>5</StartTime>
+      <RandomStartTime>0</RandomStartTime>
+      <InterGenerationTime>5</InterGenerationTime>
+      <RandomInterGenerationTime>1</RandomInterGenerationTime>
+    </Generator>
+	<!-- Generator 2 -->
+	<Generator>
+      <NumberOfTimes>4</NumberOfTimes>
+      <ObjectType>Camouflager</ObjectType>
+      <NumberOfObjects>10</NumberOfObjects>
+      <StartTime>10</StartTime>
+      <RandomStartTime>0</RandomStartTime>
+      <InterGenerationTime>5</InterGenerationTime>
+      <RandomInterGenerationTime>1</RandomInterGenerationTime>
+    </Generator>
+	<!-- Generator 3 -->
+	<Generator><NumberOfTimes>3</NumberOfTimes>
+      <ObjectType>Hakintroy</ObjectType>
+      <NumberOfObjects>2</NumberOfObjects>
+      <StartTime>10</StartTime>
+      <RandomStartTime>1</RandomStartTime>
+      <InterGenerationTime>5</InterGenerationTime>
+      <RandomInterGenerationTime>1</RandomInterGenerationTime>
+    </Generator>
+	<!-- Generator 4 -->
+	<Generator><NumberOfTimes>3</NumberOfTimes>
+      <ObjectType>exe File</ObjectType>
+      <NumberOfObjects>3</NumberOfObjects>
+      <StartTime>10</StartTime>
+      <RandomStartTime>1</RandomStartTime>
+      <InterGenerationTime>5</InterGenerationTime>
+      <RandomInterGenerationTime>1</RandomInterGenerationTime>
+    </Generator>
+  
+</LevelData>

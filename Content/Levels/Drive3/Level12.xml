@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LevelData>
+  
+    <LevelName>Take Your Time !!</LevelName>
+    <Dimension><X>1500</X> <Y>1000</Y></Dimension>
+    <StartPosition><X>800</X> <Y>500</Y></StartPosition>
+    <TimeEndLevel>-1</TimeEndLevel>
+    <NumberOfDocumentFiles>15</NumberOfDocumentFiles>
+    <TopPlayerBodyIndex>-1</TopPlayerBodyIndex>
+    <BottomPlayerBodyIndex>-1</BottomPlayerBodyIndex>
+    <TopPlayerWeaponIndex>-1</TopPlayerWeaponIndex>
+    <BottomPlayerWeaponIndex>-1</BottomPlayerWeaponIndex>
+    <BossName>None</BossName>
+	<!-- Generator 1 -->
+	<Generator><NumberOfTimes>3</NumberOfTimes>
+      <ObjectType>hackintosh</ObjectType>
+      <NumberOfObjects>1</NumberOfObjects>
+      <StartTime>5</StartTime>
+      <RandomStartTime>0</RandomStartTime>
+      <InterGenerationTime>5</InterGenerationTime>
+      <RandomInterGenerationTime>1</RandomInterGenerationTime>
+    </Generator>
+	<!-- Generator 2 -->
+	<Generator><NumberOfTimes>4</NumberOfTimes>
+      <ObjectType>Trojan</ObjectType>
+      <NumberOfObjects>-1</NumberOfObjects>
+      <StartTime>5</StartTime>
+      <RandomStartTime>1</RandomStartTime>
+      <InterGenerationTime>5</InterGenerationTime>
+      <RandomInterGenerationTime>1</RandomInterGenerationTime>
+    </Generator>
+	<!-- Generator 3 -->
+	<Generator><NumberOfTimes>3</NumberOfTimes>
+      <ObjectType>malzone</ObjectType>
+      <NumberOfObjects>3</NumberOfObjects>
+      <StartTime>5</StartTime>
+      <RandomStartTime>0</RandomStartTime>
+      <InterGenerationTime>10</InterGenerationTime>
+      <RandomInterGenerationTime>1</RandomInterGenerationTime>
+    </Generator>
+	<!-- Generator 4 -->
+	<Generator><NumberOfTimes>5</NumberOfTimes>
+      <ObjectType>DoSX</ObjectType>
+      <NumberOfObjects>-1</NumberOfObjects>
+      <StartTime>5</StartTime>
+      <RandomStartTime>1</RandomStartTime>
+      <InterGenerationTime>5</InterGenerationTime>
+      <RandomInterGenerationTime>1</RandomInterGenerationTime>
+    </Generator>
+	<!-- Generator 5 -->
+	<Generator><NumberOfTimes>3</NumberOfTimes>
+      <ObjectType>worm</ObjectType>
+      <NumberOfObjects>-1</NumberOfObjects>
+      <StartTime>5</StartTime>
+      <RandomStartTime>1</RandomStartTime>
+      <InterGenerationTime>5</InterGenerationTime>
+      <RandomInterGenerationTime>1</RandomInterGenerationTime>
+    </Generator>
+	<!-- Generator 6 -->
+	<Generator><NumberOfTimes>2</NumberOfTimes>
+      <ObjectType>Camouflager</ObjectType>
+      <NumberOfObjects>-1</NumberOfObjects>
+      <StartTime>5</StartTime>
+      <RandomStartTime>1</RandomStartTime>
+      <InterGenerationTime>5</InterGenerationTime>
+      <RandomInterGenerationTime>1</RandomInterGenerationTime>
+    </Generator>
+	<!-- Generator 7 -->
+	<Generator><NumberOfTimes>1</NumberOfTimes>
+      <ObjectType>Document File</ObjectType>
+      <NumberOfObjects>1</NumberOfObjects>
+      <StartTime>5</StartTime>
+      <RandomStartTime>1</RandomStartTime>
+      <InterGenerationTime>4</InterGenerationTime>
+      <RandomInterGenerationTime>1</RandomInterGenerationTime>
+    </Generator>
+  
+</LevelData>

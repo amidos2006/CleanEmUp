@@ -1,0 +1,1144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7B99CAB7-489E-4754-AD6F-F0C955049BF1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CleanEmUp</RootNamespace>
+    <AssemblyName>CleanEmUp_MonoGame</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MonoGamePlatform>Windows</MonoGamePlatform>
+    <MonoGameContentBuilderExe>
+    </MonoGameContentBuilderExe>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Windows\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Windows\Release\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Game.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="OmidosGameEngine\Sounds\GameSoundEffects.cs" />
+    <Compile Include="OmidosGameEngine\Sounds\SoundEffectProperties.cs" />
+    <Compile Include="SteamManager.cs" />
+    <Compile Include="Game1.cs" />
+    <Compile Include="OmidosGameEngine\BloomEffect\BloomComponent.cs" />
+    <Compile Include="OmidosGameEngine\BloomEffect\BloomSettings.cs" />
+    <Compile Include="OmidosGameEngine\Camera.cs" />
+    <Compile Include="OmidosGameEngine\Collision\Collision.cs" />
+    <Compile Include="OmidosGameEngine\Collision\CollisionType.cs" />
+    <Compile Include="OmidosGameEngine\Collision\HitboxMask.cs" />
+    <Compile Include="OmidosGameEngine\Collision\IMask.cs" />
+    <Compile Include="OmidosGameEngine\Collision\Mask.cs" />
+    <Compile Include="OmidosGameEngine\Collision\MaskType.cs" />
+    <Compile Include="OmidosGameEngine\Collision\PixelCollisionMask.cs" />
+    <Compile Include="OmidosGameEngine\Data\AchievementData.cs" />
+    <Compile Include="OmidosGameEngine\Data\CharacterData.cs" />
+    <Compile Include="OmidosGameEngine\Data\ControlType.cs" />
+    <Compile Include="OmidosGameEngine\Data\CreditData.cs" />
+    <Compile Include="OmidosGameEngine\Data\DataLoader.cs" />
+    <Compile Include="OmidosGameEngine\Data\DriveData.cs" />
+    <Compile Include="OmidosGameEngine\Data\EnemyData.cs" />
+    <Compile Include="OmidosGameEngine\Data\GameAchievements.cs" />
+    <Compile Include="OmidosGameEngine\Data\GeneratorData.cs" />
+    <Compile Include="OmidosGameEngine\Data\LevelData.cs" />
+    <Compile Include="OmidosGameEngine\Data\SaveData.cs" />
+    <Compile Include="OmidosGameEngine\Data\StoryData.cs" />
+    <Compile Include="OmidosGameEngine\Data\WeaponData.cs" />
+    <Compile Include="OmidosGameEngine\Entity\BaseBullet.cs" />
+    <Compile Include="OmidosGameEngine\Entity\BaseEntity.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Boss\BaseBoss.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Boss\BossState.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Boss\DosBoss.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Boss\DosBossController.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Boss\DosBossNewPosition.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Boss\HackintoshBoss.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Boss\HackintoshBossFan.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Boss\HackintoshBossFanController.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Boss\PopurBoss.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Boss\PopurBossNewPosition.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Boss\TroyBoss.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Boss\VirusBoss.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Boss\VirusBossTail.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Cursor\CursorEntity.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Cursor\CursorType.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Enemy\BaseEnemy.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Enemy\BouncerEnemy.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Enemy\DOS2Enemy.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Enemy\DOSEnemy.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Enemy\EnemyStatus.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Enemy\EnemyThrusterData.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Enemy\Hackintosh2Enemy.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Enemy\HackintoshEnemy.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Enemy\Malzone2Enemy.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Enemy\MalzoneEnemy.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Enemy\Popur2Enemy.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Enemy\PopurEnemy.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Enemy\SlowEnemy.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Enemy\Troy2Enemy.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Enemy\TroyEnemy.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Enemy\VirusEnemy.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Enemy\WormEnemy.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Explosion\BaseExplosion.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Generator\BaseGenerator.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Object\BaseObject.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Object\File\BaseFile.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Object\File\DocumentFile.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Object\File\ExeFile.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Object\File\FileNotifierEntity.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Object\File\FileStatus.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Object\File\ZipFile.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Object\FreezeEnemiesEntity.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Object\MediumKitObject.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Object\MosiacObject.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Object\ObjectNotifierEntity.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Object\PlasticExplosionObject.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Object\QuarantineObject.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Object\ShieldObject.cs" />
+    <Compile Include="OmidosGameEngine\Entity\OverLayer\AchievementAnnouncer.cs" />
+    <Compile Include="OmidosGameEngine\Entity\OverLayer\AnnouncerEntity.cs" />
+    <Compile Include="OmidosGameEngine\Entity\OverLayer\AnnouncerStatus.cs" />
+    <Compile Include="OmidosGameEngine\Entity\OverLayer\ArmoryAnnouncer.cs" />
+    <Compile Include="OmidosGameEngine\Entity\OverLayer\ArrowEntity.cs" />
+    <Compile Include="OmidosGameEngine\Entity\OverLayer\Button.cs" />
+    <Compile Include="OmidosGameEngine\Entity\OverLayer\CheckButton.cs" />
+    <Compile Include="OmidosGameEngine\Entity\OverLayer\CreditsAnnouncer.cs" />
+    <Compile Include="OmidosGameEngine\Entity\OverLayer\DriveSelectorAnnouncer.cs" />
+    <Compile Include="OmidosGameEngine\Entity\OverLayer\HUDEntity.cs" />
+    <Compile Include="OmidosGameEngine\Entity\OverLayer\InGameAchievementAnnouncer.cs" />
+    <Compile Include="OmidosGameEngine\Entity\OverLayer\LevelNameAnnouncerEntity.cs" />
+    <Compile Include="OmidosGameEngine\Entity\OverLayer\LevelSelectorAnnouncer.cs" />
+    <Compile Include="OmidosGameEngine\Entity\OverLayer\LogoEntity.cs" />
+    <Compile Include="OmidosGameEngine\Entity\OverLayer\MainMenuButtonAnnouncerEntity.cs" />
+    <Compile Include="OmidosGameEngine\Entity\OverLayer\MainMenuEntity.cs" />
+    <Compile Include="OmidosGameEngine\Entity\OverLayer\OverclockingBarFilledEntity.cs" />
+    <Compile Include="OmidosGameEngine\Entity\OverLayer\ScoreType.cs" />
+    <Compile Include="OmidosGameEngine\Entity\OverLayer\SettingsAnnouncerEntity.cs" />
+    <Compile Include="OmidosGameEngine\Entity\OverLayer\StatisticAnnouncer.cs" />
+    <Compile Include="OmidosGameEngine\Entity\OverLayer\TextAnnouncerEntity.cs" />
+    <Compile Include="OmidosGameEngine\Entity\OverLayer\TextNotifierEntity.cs" />
+    <Compile Include="OmidosGameEngine\Entity\OverLayer\TimeAnnouncerEntity.cs" />
+    <Compile Include="OmidosGameEngine\Entity\OverLayer\TitleAnnouncerEntity.cs" />
+    <Compile Include="OmidosGameEngine\Entity\OverLayer\TitleButtonAnnouncerEntity.cs" />
+    <Compile Include="OmidosGameEngine\Entity\OverLayer\TitleSubTitleButtonAnnouncerEntity.cs" />
+    <Compile Include="OmidosGameEngine\Entity\OverLayer\UnlockButton.cs" />
+    <Compile Include="OmidosGameEngine\Entity\OverLayer\VirusAnnouncerEntity.cs" />
+    <Compile Include="OmidosGameEngine\Entity\OverLayer\WindowButtonState.cs" />
+    <Compile Include="OmidosGameEngine\Entity\ParticleGenerator\CircleParticleGenerator.cs" />
+    <Compile Include="OmidosGameEngine\Entity\ParticleGenerator\FractionalParticleGenerator.cs" />
+    <Compile Include="OmidosGameEngine\Entity\ParticleGenerator\IParticleGenerator.cs" />
+    <Compile Include="OmidosGameEngine\Entity\ParticleGenerator\ParticleGenerator.cs" />
+    <Compile Include="OmidosGameEngine\Entity\ParticleGenerator\TrailParticleGenerator.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Bullet\BulletGrenadeBullet.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Bullet\EffectArea.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Bullet\EvaporatorBullet.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Bullet\FreezerBullet.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Bullet\GasEffectArea.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Bullet\GrenadeBullet.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Bullet\HellgunBullet.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Bullet\HomigRocketBullet.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Bullet\MineBullet.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Bullet\MinigunBullet.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Bullet\MotherBombBullet.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Bullet\PistolBullet.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Bullet\PlayerBullet.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Bullet\RifleBullet.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Bullet\RocketBullet.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Bullet\ShotgunBullet.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Bullet\SpikeBullet.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Bullet\TommygunBullet.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Bullet\UziBullet.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Bullet\XenaBullet.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Data\DieselData.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Data\EbsData.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Data\JackData.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Data\JessicaData.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Data\OmarData.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Data\PlayerData.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Data\SmithData.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\OverClocking\ExplosionEffectArea.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\OverClocking\FreezeEffectArea.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\OverClocking\HealEffectArea.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\OverClocking\PPEffectArea.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\OverClocking\WaveEffectArea.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\PlayerEntity.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\ShieldImageEntity.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\ShootingType.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Weapons\BaseWeapon.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Weapons\BulletGrenadeLauncherWeapon.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Weapons\EvaporatorWeapon.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Weapons\FreezerWeapon.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Weapons\GrenadeLauncherWeapon.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Weapons\HellgunWeapon.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Weapons\HellRocketLauncherWeapon.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Weapons\HomingRocketLauncherWeapon.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Weapons\IWeapon.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Weapons\MineLauncherWeapon.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Weapons\MinigunWeapon.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Weapons\MotherBombLauncherWeapon.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Weapons\PistolWeapon.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Weapons\RifleWeapon.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Weapons\RifleXpWeapon.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Weapons\RocketLauncherWeapon.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Weapons\ShotgunWeapon.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Weapons\SpikeLauncherWeapon.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Weapons\TommygunWeapon.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Weapons\UziWeapon.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Player\Weapons\XenaWeapon.cs" />
+    <Compile Include="OmidosGameEngine\Entity\Tutorial\TutorialEntity.cs" />
+    <Compile Include="OmidosGameEngine\GameButtonState.cs" />
+    <Compile Include="OmidosGameEngine\GlobalVariables.cs" />
+    <Compile Include="OmidosGameEngine\Graphics\AdditiveWhiteImage.cs" />
+    <Compile Include="OmidosGameEngine\Graphics\AlignType.cs" />
+    <Compile Include="OmidosGameEngine\Graphics\Backdrop.cs" />
+    <Compile Include="OmidosGameEngine\Graphics\FontSize.cs" />
+    <Compile Include="OmidosGameEngine\Graphics\HackedNoiseEffect.cs" />
+    <Compile Include="OmidosGameEngine\Graphics\IGraphics.cs" />
+    <Compile Include="OmidosGameEngine\Graphics\Image.cs" />
+    <Compile Include="OmidosGameEngine\Graphics\Lighting\LightingSystem.cs" />
+    <Compile Include="OmidosGameEngine\Graphics\Lighting\LightSource.cs" />
+    <Compile Include="OmidosGameEngine\Graphics\NoiseEffect.cs" />
+    <Compile Include="OmidosGameEngine\Graphics\Particles\Particle.cs" />
+    <Compile Include="OmidosGameEngine\Graphics\Particles\ParticleEffectSystem.cs" />
+    <Compile Include="OmidosGameEngine\Graphics\Particles\ParticlePattern.cs" />
+    <Compile Include="OmidosGameEngine\Graphics\Particles\ParticlePatternType.cs" />
+    <Compile Include="OmidosGameEngine\Graphics\Particles\ParticleTextureType.cs" />
+    <Compile Include="OmidosGameEngine\Graphics\RedHitEffectImage.cs" />
+    <Compile Include="OmidosGameEngine\Graphics\Text.cs" />
+    <Compile Include="OmidosGameEngine\Graphics\Vector.cs" />
+    <Compile Include="OmidosGameEngine\ILogical.cs" />
+    <Compile Include="OmidosGameEngine\Input.cs" />
+    <Compile Include="OmidosGameEngine\OGE.cs" />
+    <Compile Include="OmidosGameEngine\Sounds\SoundManager.cs" />
+    <Compile Include="OmidosGameEngine\Tween\Alarm.cs" />
+    <Compile Include="OmidosGameEngine\Tween\ITween.cs" />
+    <Compile Include="OmidosGameEngine\Tween\TweenType.cs" />
+    <Compile Include="OmidosGameEngine\World\AchievementWorld.cs" />
+    <Compile Include="OmidosGameEngine\World\ArmoryWorld.cs" />
+    <Compile Include="OmidosGameEngine\World\BaseWorld.cs" />
+    <Compile Include="OmidosGameEngine\World\CreditsWorld.cs" />
+    <Compile Include="OmidosGameEngine\World\DemoWorld.cs" />
+    <Compile Include="OmidosGameEngine\World\DriveSelectorWorld.cs" />
+    <Compile Include="OmidosGameEngine\World\EndStoryWorld.cs" />
+    <Compile Include="OmidosGameEngine\World\GameplayWorld.cs" />
+    <Compile Include="OmidosGameEngine\World\LevelSelectorWorld.cs" />
+    <Compile Include="OmidosGameEngine\World\MainMenuWorld.cs" />
+    <Compile Include="OmidosGameEngine\World\ReviewWorld.cs" />
+    <Compile Include="OmidosGameEngine\World\SettingsWorld.cs" />
+    <Compile Include="OmidosGameEngine\World\StoryWorld.cs" />
+    <Compile Include="OmidosGameEngine\World\SurvivalArmoryWorld.cs" />
+    <Compile Include="OmidosGameEngine\World\SurvivalGameplayWorld.cs" />
+    <Compile Include="OmidosGameEngine\World\SurvivalStatisticsWorld.cs" />
+    <Compile Include="OmidosGameEngine\World\SurvivalTypeWorld.cs" />
+    <Compile Include="OmidosGameEngine\World\SurvivalVirusDatabaseWorld.cs" />
+    <Compile Include="OmidosGameEngine\World\VirusDatabaseWorld.cs" />
+    <Compile Include="OmidosGameEngine\World\VirusNotifierWorld.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MSBuildProgramFiles32)\MonoGame\v3.0\Assemblies\Windows\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Steamworks.NET, Version=3.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Steamworks.NET\Steamworks.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\GameData\AchievementData.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\GameData\DriveData.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\GameData\GameData.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive1\Level1.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive1\Level10.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive1\Level11.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive1\Level12.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive1\Level13.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive1\Level14.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive1\Level15.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive1\Level2.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive1\Level3.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive1\Level4.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive1\Level5.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive1\Level6.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive1\Level7.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive1\Level8.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive1\Level9.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive2\Level1.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive2\Level10.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive2\Level11.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive2\Level12.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive2\Level13.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive2\Level14.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive2\Level15.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive2\Level2.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive2\Level3.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive2\Level4.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive2\Level5.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive2\Level6.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive2\Level7.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive2\Level8.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive2\Level9.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive3\Level1.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive3\Level10.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive3\Level11.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive3\Level12.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive3\Level13.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive3\Level14.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive3\Level15.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive3\Level2.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive3\Level3.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive3\Level4.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive3\Level5.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive3\Level6.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive3\Level7.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive3\Level8.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive3\Level9.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive4\Level1.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive4\Level10.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive4\Level11.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive4\Level12.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive4\Level13.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive4\Level14.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive4\Level15.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive4\Level2.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive4\Level3.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive4\Level4.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive4\Level5.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive4\Level6.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive4\Level7.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive4\Level8.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive4\Level9.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive5\Level1.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive5\Level10.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive5\Level11.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive5\Level12.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive5\Level13.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive5\Level14.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive5\Level15.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive5\Level2.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive5\Level3.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive5\Level4.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive5\Level5.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive5\Level6.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive5\Level7.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive5\Level8.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Drive5\Level9.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Survival\Survival1.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Survival\Survival2.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Levels\Survival\Survival3.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Music\0_Boss.wma">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Music\0_Menu.wma">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Music\1_3_Trojannosaurus.wma">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Music\1_Ingame.wma">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Music\1_Storage.wma">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Music\2_4_Ingame_2.wma">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Music\2_Diediedie.wma">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Music\2_Forward.wma">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Music\3_ChillKill.wma">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Music\3_Kill.wma">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Music\4_Vacuum.wma">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Music\4_Virosaur.wma">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Music\5_JamSpam.wma">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\SoundEffects\SoundEffectsProperties.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CSteamworks.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Game.ico" />
+    <Content Include="steam_api.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="steam_appid.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <Content Include="Content\Fonts\extralarge.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Fonts\large.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Fonts\medium.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Fonts\small.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Backgrounds\Background1.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Backgrounds\Background2.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Backgrounds\Background3.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Backgrounds\Background4.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Backgrounds\Background5.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Effects\HitEffect.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Effects\Noise.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Bosses\DosBoss.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Bosses\DosBossFan.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Bosses\ExplosionPositon.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Bosses\HackintoshBoss.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Bosses\HackintoshBossFan.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Bosses\Ice.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Bosses\TroyBoss.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Bosses\VirusBoss.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Bosses\VirusBossTail.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Bosses\WaitBoss.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Bullets\BigRedGrenade.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Bullets\BlueBullet.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Bullets\BlueVapour.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Bullets\CooldownRange.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Bullets\EffectRange.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Bullets\EffectRangeEffect.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Bullets\FreezeRange.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Bullets\GreenGrenade.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Bullets\GreenXena.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Bullets\HealingRange.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Bullets\OrangeBullet.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Bullets\OrangeMine.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Bullets\OrangeRocket.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Bullets\OrangeVapour.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Bullets\RedBullet.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Bullets\RedGrenade.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Bullets\RedRocket.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Bullets\RedSpike.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Bullets\WaveRange.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Bullets\YellowBullet.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Bullets\YellowGrenade.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Cursor\ingameCursor.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Cursor\menuCursor.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Enemies\Bouncer.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Enemies\DOS.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Enemies\DOS2.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Enemies\Freeze.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Enemies\Hackintosh.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Enemies\Hackintosh2.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Enemies\Malzone.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Enemies\Malzone2.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Enemies\Popur.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Enemies\Popur2.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Enemies\Slower.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Enemies\Troy.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Enemies\Troy2.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Enemies\Virus.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Enemies\Worm.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\HUD\BossHealth.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\HUD\BossHealthBG.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\HUD\FileArrow.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\HUD\Life.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\HUD\LifeBG.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\HUD\Processor.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\HUD\ProcessorBG.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\HUD\Rage.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\HUD\RageBG.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Objects\BossHealth.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Objects\BossHealthBG.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Objects\DocumentFile.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Objects\ExeFile.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Objects\Health.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Objects\HealthBG.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Objects\InfectedFile.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Objects\InfectedFileTrojan.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Objects\MediumKitObject.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Objects\MosiacObject.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Objects\ObjectNotifier.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Objects\PlasticExplosionObject.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Objects\QuarantineObject.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Objects\ShieldObject.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Objects\ZipFile.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Objects\ZipFileNotifier.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Players\DieselBody.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Players\EbsBody.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Players\JackBody.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Players\JessicaBody.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Players\OmarBody.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Players\Shield.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Players\SmithBody.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Players\Weapons\Evaporator.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Players\Weapons\Freezer.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Players\Weapons\GasGrenade.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Players\Weapons\GrenadeLauncher.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Players\Weapons\Hellgun.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Players\Weapons\HellLauncher.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Players\Weapons\HomingMissle.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Players\Weapons\Mine.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Players\Weapons\Minigun.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Players\Weapons\MotherBomb.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Players\Weapons\pistol.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Players\Weapons\Rifle.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Players\Weapons\RifleXP.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Players\Weapons\RocketLauncher.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Players\Weapons\ScatterBomb.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Players\Weapons\Shotgun.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Players\Weapons\Spiker.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Players\Weapons\Tommygun.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Players\Weapons\Uzi.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Players\Weapons\Xena.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Tutorial\ArrowLayout.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Tutorial\Controls.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\Tutorial\TutorialLabels.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\WindowGraphics\ArmoryBG.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\WindowGraphics\Body.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\WindowGraphics\Border.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\WindowGraphics\Buttons.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\WindowGraphics\Characters.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\WindowGraphics\CheckButtons.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\WindowGraphics\CleanEmUpLogo.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\WindowGraphics\EnemyWindow.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\WindowGraphics\Omidos.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\WindowGraphics\PlayerCombinationBG.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\WindowGraphics\UnlockButtons.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Entities\WindowGraphics\Weapons.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Intro\LogoBack.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Intro\OLogo.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Intro\OmidosLogo.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\LightSource\LightSource.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Particles\BlurParticle.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Particles\BlurSquare.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Particles\Data\BlurParticle.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Particles\Data\LineParticle.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Particles\FireParticle.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\Particles\LineParticle.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Graphics\PixelTest.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Music\0_Boss.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Music\0_Menu.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Music\1_3_Trojannosaurus.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Music\1_Ingame.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Music\1_Storage.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Music\2_4_Ingame_2.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Music\2_Diediedie.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Music\2_Forward.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Music\3_ChillKill.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Music\3_Kill.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Music\4_Vacuum.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Music\4_Virosaur.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Music\5_JamSpam.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\BloomCombine.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\BloomExtract.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\GaussianBlur.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\SoundEffects\bullet_collision.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\SoundEffects\enemy_destroy.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\SoundEffects\error.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\SoundEffects\explosion.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\SoundEffects\file_collision.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\SoundEffects\file_pickup.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\SoundEffects\flame_thrower.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\SoundEffects\freezer.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\SoundEffects\grenade_launch.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\SoundEffects\minigun.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\SoundEffects\pickup.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\SoundEffects\player_hit.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\SoundEffects\rifle.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\SoundEffects\rocket_launch.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\SoundEffects\shotgun.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\SoundEffects\pistol.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\SoundEffects\tommygun.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\SoundEffects\hellgun.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\SoundEffects\uzi.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
